@@ -5,4 +5,4 @@ nginx:
     - watch:
       - pkg: nginx
       #- file: /etc/nginx/nginx.conf
-      #- file: /etc/nginx/sites-availible/default
+      - file: /etc/nginx/sites-available/default
