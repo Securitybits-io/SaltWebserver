@@ -3,4 +3,4 @@
     - user: root
     - group: root
     - mode: 0644
-    - source: salt://bashrc/bashrc
+    - source: salt://packages/bashrc/bashrc

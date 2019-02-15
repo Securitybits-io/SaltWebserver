@@ -10,12 +10,14 @@ Vagrant.configure("2") do |config|
     nginx.vm.box = "ubuntu/bionic64"
     nginx.vm.hostname = "nginx"
     nginx.vm.network "private_network", ip: "192.168.6.11"
+    nginx.vm.network "forwarded_port", guest: 80, host: 8080
     nginx.vm.provision :shell, path: "provision-scripts/bootstrap-nginx.sh"
   end
   config.vm.define "apache" do |apache|
     apache.vm.box = "ubuntu/bionic64"
     apache.vm.hostname = "apache"
     apache.vm.network "private_network", ip: "192.168.6.12"
+    apache.vm.network "forwarded_port", guest: 80, host: 8081
     apache.vm.provision :shell, path: "provision-scripts/bootstrap-apache.sh"
   end
   config.vm.define "ghost" do |ghost|

@@ -1,10 +1,10 @@
 base:
   '*':
-    - bashrc
-    - requirements
+    - packages.bashrc
+    - packages.requirements
   #'nginx':
   #  - nginx
-  #'apache':
-  #  - apache
+  'apache':
+    - vms.apache
   #'ghost':
   #  -
