@@ -2,5 +2,9 @@ base:
   '*':
     - bashrc
     - requirements
-  "prodminion":
-    - apache
+  #'nginx':
+  #  - nginx
+  #'apache':
+  #  - apache
+  #'ghost':
+  #  -

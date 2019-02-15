@@ -8,3 +8,4 @@ essential-packages:
       - apache2-utils
       - python
       - python-pip
+      - nano
