@@ -2,8 +2,8 @@ base:
   '*':
     - packages.bashrc
     - packages.requirements
-  #'nginx':
-  #  - nginx
+  'nginx':
+    - vms.nginx
   'apache':
     - vms.apache
   #'ghost':
