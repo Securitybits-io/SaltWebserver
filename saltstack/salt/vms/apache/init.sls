@@ -16,3 +16,10 @@ include:
     - user: root
     - group: root
     - mode: 644
+
+/etc/apache2/apache2.conf:
+  file.managed:
+    - source: salt://vms/apache/deploy_files/apache2.conf
+    - user: root
+    - group: root
+    - mode: 644
