@@ -12,4 +12,3 @@ cp /vagrant/provision-scripts/deploy-file/bashrc /root/.bashrc
 apt-get update
 apt-get install -y salt-minion
 cat "/vagrant/provision-scripts/deploy-file/hosts" >> /etc/hosts
-reboot

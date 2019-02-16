@@ -16,4 +16,3 @@ chmod 0700 /root/.ssh/id_rsa.salt
 service salt-master restart
 
 cat "/vagrant/provision-scripts/deploy-file/hosts" >> /etc/hosts
-reboot

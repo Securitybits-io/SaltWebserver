@@ -6,5 +6,3 @@ base:
     - vms.nginx
   'apache':
     - vms.apache
-  #'ghost':
-  #  -
