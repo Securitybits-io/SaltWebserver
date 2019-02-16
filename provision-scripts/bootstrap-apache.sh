@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 hostname apache
+mkdir /etc/salt
 echo 'apache' > /etc/salt/minion_id
 
 # First copy bashrc file that enables color text, I hate BW :(
@@ -12,3 +13,4 @@ apt-get update
 apt-get install -y salt-minion
 
 cat "/vagrant/provision-scripts/deploy-file/hosts" >> /etc/hosts
+reboot

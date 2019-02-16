@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 hostname nginx
+mkdir /etc/salt
 echo 'nginx' > /etc/salt/minion_id
 
 # First copy bashrc file that enables color text, I hate BW :(
@@ -11,3 +12,4 @@ cp /vagrant/provision-scripts/deploy-file/bashrc /root/.bashrc
 apt-get update
 apt-get install -y salt-minion
 cat "/vagrant/provision-scripts/deploy-file/hosts" >> /etc/hosts
+reboot

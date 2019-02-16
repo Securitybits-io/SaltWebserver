@@ -3,6 +3,6 @@ server {
   server_name www.dev.salt dev.salt;
 
   location / {
-    proxy_pass http://192.168.6.12:8080/;
+    proxy_pass http://192.168.6.12:80/;
   }
 }
