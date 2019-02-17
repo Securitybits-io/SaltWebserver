@@ -21,8 +21,10 @@ christoffer:
     - home: /home/christoffer
     - groups:
       - christoffer
+      - sudo
     - require:
-      - group: christoffer
+      - group:
+          christoffer
   ssh_auth.present:
     - user: christoffer
     - require:
